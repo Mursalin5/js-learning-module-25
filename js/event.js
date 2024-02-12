@@ -29,14 +29,6 @@ document.getElementById('make-goldenrod').addEventListener('click',function(){
 //------------------------
 
 
-function handelOnClick() {
-    const handlerStatus = document.getElementById('handler-status');
-    handlerStatus.innerText = 'handled by function attached on onclick attribute'
-}
-//----option 2
-document.getElementById('event-listener').addEventListener('click', function () {
-    const handlerStatus = document.getElementById('handler-status');
-    handlerStatus.innerText = 'text update by add Event listener button'
-})
+
 
 
