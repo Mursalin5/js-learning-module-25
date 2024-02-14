@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Summary</title>
+</head>
+<body>
+    <h1>Summary for 25 module</h1>
+<button onclick="makeYellow()" >make yellow</button>
+<button id="make-green">make green</button>
+<br>
+<input type="email " id="user-email">
+<script>
+    // option--1
+function makeYellow(){
+    document.body.style.backgroundColor = 'yellow'
+}
+
+    //option--2
+    document.getElementById('make-green').addEventListener('click',function(){
+        document.body.style.backgroundColor = 'green';
+    })
+// keyup event.
+    document.getElementById('user-email').addEventListener('keyup',function(event){
+        console.log(event.target.value)
+    })
+</script>
+</body>
+</html>
